@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="styles/styles.css">
+    <title>Survey form</title>
+</head>
+
+<body>
+    <div class="title">
+        <h1 id="title">Survey form.</h1>
+        <p id="description">This is a survey form.</p>
+    </div>
+    <form action='https://register-demo.freecodecamp.org'>
+        <fieldset>
+            <label>Nombre: <input type="text" name="first-name" required /></label>
+            <label>Apellido: <input type="text" name="last-name" required /></label>
+            <label>Email: <input type="email" name="email" required /></label>
+        </fieldset>
+        <fieldset>
+            <label>Como te gustaria comunicarte?</label>
+            <label><input type="radio" name="account-type" class="inline" /> Email</label>
+            <label><input type="radio" name="account-type" class="inline" /> Video llamada</label>
+        </fieldset>
+        <fieldset>
+            <label>
+                <input type="checkbox" name="terms" class="inline" required /> Suscríbete a mi blog
+            </label>
+        </fieldset>
+        <fieldset>
+            </label>
+            <label>Como me encontraste?
+                <select name="referrer">
+                    <option value="">(select one)</option>
+                    <option value="1">Web portfolio</option>
+                    <option value="2">Github</option>
+                    <option value="3">Linkedin</option>
+                    <option value="4">Other</option>
+                </select>
+            </label>
+            <label>Deja tu mensaje
+                <textarea name="bio" rows="3" cols="30" placeholder="Mensaje aqui..."></textarea>
+            </label>
+        </fieldset>
+        <div class="submit">
+            <input type="submit" value="Submit" />
+        </div>
+    </form>
+</body>
+
+</html>
